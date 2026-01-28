@@ -1,72 +1,110 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>Pizza Ordering Form</title>
+</head>
+<body>
     <h1>Pizza Ordering Form</h1>
-    <h2>Contact Information</h2>
-    <p1>
+    <form>
+        <h2>Contact Information</h2>
         <div>
             <label for="name">Name:</label>
-            <input type="text" name="name" id="name">
+            <input type="text" name="name" id="name" required>
             <br>
             <label for="phone">Phone:</label>
-            <input type="phone" name="phone" id="phone">
+            <input type="tel" name="phone" id="phone" required>
             <br>
             <label for="email">Email:</label>
-            <input type="email" name="email" id="email">
+            <input type="email" name="email" id="email" required>
         </div>
-    </p1>
-    <h2>Select Pizza Size</h2>
-    <p1>
+        
+        <h2>Select Pizza Size</h2>
         <div>
             <label for="pizzaSize">Pizza Size: </label>
-            <select name="--Select Size--" id="pizzaSize">
-                <option>--Select Size--</option>
-                <option>Medium</option>
-                <option>Large</option>
-                <option>XLarge</option>
+            <select name="pizzaSize" id="pizzaSize" required>
+                <option value="">--Select Size--</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="xlarge">XLarge</option>
             </select>
         </div>
-    </p1>
-    <h2>Select Sauce</h2>
-    <p1>
+        
+        <h2>Select Sauce</h2>
         <div>
-            <input type="radio" name="sauce" id="marinara">
-            <label>Marinara</label>
+            <input type="radio" name="sauce" id="marinara" value="marinara" required>
+            <label for="marinara">Marinara</label>
             <br>
-            <input type="radio" name="sauce" id="ranch">
-            <label>Ranch</label>
+            <input type="radio" name="sauce" id="ranch" value="ranch" required>
+            <label for="ranch">Ranch</label>
             <br>
-            <input type="radio" name="sauce" id="noSauce">
-            <label>No Sauce</label>
+            <input type="radio" name="sauce" id="noSauce" value="noSauce" required>
+            <label for="noSauce">No Sauce</label>
         </div>
-    </p1>
-    <h2>Select Toppings</h2>
-    <p1>
+        
+        <h2>Select Toppings</h2>
         <div>
-            <input type="checkbox" name="toppings" id="pepperoni">
-            <label>Pepperoni</label>
-            <input type="checkbox" name="toppings" id="sausage">
-            <label>Sausage</label>
+            <input type="checkbox" name="toppings" id="pepperoni" value="pepperoni">
+            <label for="pepperoni">Pepperoni</label>
+            <input type="checkbox" name="toppings" id="sausage" value="sausage">
+            <label for="sausage">Sausage</label>
             <br>
-            <input type="checkbox" name="toppings" id="mushroom">
-            <label>Mushroom</label>
-            <input type="checkbox" name="topppings" id="pineapple">
-            <label>Pineapple</label>
+            <input type="checkbox" name="toppings" id="mushroom" value="mushroom">
+            <label for="mushroom">Mushroom</label>
+            <input type="checkbox" name="toppings" id="pineapple" value="pineapple">
+            <label for="pineapple">Pineapple</label>
             <br>
-            <input type="checkbox" name="toppings" id="peppers">
-            <label>Peppers</label>
-            <input type="checkbox" name="toppings" id="onions">
-            <label>Onions</label>
+            <input type="checkbox" name="toppings" id="peppers" value="peppers">
+            <label for="peppers">Peppers</label>
+            <input type="checkbox" name="toppings" id="onions" value="onions">
+            <label for="onions">Onions</label>
         </div>
-    </p1>
-    <h2>Additional Instructions</h2>
-    <p1>
+        
+        <h2>Additional Instructions</h2>
         <div>
-            <textarea name="instructions" id="instructions">Add instructions</textarea>
+            <textarea name="instructions" id="instructions" placeholder="Add instructions"></textarea>
             <br>
             <input type="submit" value="Submit">
         </div>
-    </p1>
+    </form>
+
+    <br>
+
     
-        
-    
+    <table border="1">
+        <caption>List of My Favorite Games</caption>
+        <thead>
+            <tr>
+                <th>Developer</th>
+                <th>Title</th>
+                <th>Year</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Game Freak</td>
+                <td>Pokemon Black/White</td>
+                <td>2010</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Riot Games</td>
+                <td>Valorant</td>
+                <td>2020</td>
+            </tr>
+            <tr>
+                <td>Teamfight Tactics</td>
+                <td>2019</td>
+            </tr>
+            <tr>
+                <td>Blizzard Entertainment</td>
+                <td>Overwatch</td>
+                <td>2016</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Count: 4</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
 </html>
