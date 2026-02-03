@@ -1,0 +1,63 @@
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    font-size: 3em; 
+}
+
+h2 {
+    font-size: 2em; 
+}
+
+h3 {
+    font-size: 1.2em; 
+}
+
+h1 {
+    text-align: center; 
+}
+
+#paragraph2 {
+    width: 800px; 
+    margin: 20px; 
+    padding: 30px; 
+    border: 4px solid green; 
+    line-height: 2; 
+    background-color: white;
+}
+
+.blue {
+    padding: 20px;
+    background-color: rgb(46, 0, 162);
+    color: white;
+}
+
+a {
+    color: blue; 
+}
+
+
+section h3 + p a {
+    color: brown;
+} 
+
+ol {
+    list-style-type: decimal-leading-zero;
+}
+
+th {
+    background-color: #CCCCCC; 
+}
+
+td {
+    background-color: #FFFFFF; 
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #000000;
+}
