@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(0, 0, 52);
+    color: #2c2c2c;
+    line-height: 1.6;
+}
+
+body {
+    padding: 15px;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 24px;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+    text-align: center;
+    border-bottom: 2px solid #4a7c9e;
+    padding-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    margin-bottom: 8px;
+    font-size: 13px;
+}
+
+nav ul li a {
+    color: #4a7c9e;
+    text-decoration: none;
+    word-break: break-word;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 25px;
+}
+
+section h2 {
+    font-size: 20px;
+    color: #1a1a1a;
+    border-bottom: 2px solid #4a7c9e;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+article {
+    margin-bottom: 18px;
+    padding-left: 10px;
+}
+
+article h3 {
+    font-size: 17px;
+    color: #2c2c2c;
+    margin-bottom: 8px;
+}
+
+article h3 a {
+    color: #4a7c9e;
+    text-decoration: none;
+}
+
+article h3 a:hover {
+    text-decoration: underline;
+}
+
+article p {
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #444;
+}
+
+article p strong {
+    color: #2c2c2c;
+}
+
+article p em {
+    color: #666;
+    font-style: italic;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        padding: 40px 80px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    header {
+        padding: 30px 40px;
+        margin-bottom: 30px;
+    }
+
+    header h1 {
+        font-size: 32px;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-start;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    nav ul li {
+        margin-bottom: 0;
+        font-size: 15px;
+    }
+
+    main {
+        padding: 40px;
+    }
+
+    section {
+        margin-bottom: 35px;
+    }
+
+    section h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    article {
+        margin-bottom: 25px;
+        padding-left: 15px;
+    }
+
+    article h3 {
+        font-size: 19px;
+        margin-bottom: 10px;
+    }
+
+    article p {
+        font-size: 15px;
+        margin-bottom: 8px;
+    }
+}
