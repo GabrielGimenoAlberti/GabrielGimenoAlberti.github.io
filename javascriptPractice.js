@@ -1,4 +1,4 @@
-// 1pt: Simple Functions
+// Simple Functions
 function tickUp() {
     let counter = document.getElementById("counter");
     counter.textContent = parseInt(counter.textContent) + 1;
@@ -9,7 +9,7 @@ function tickDown() {
     counter.textContent = parseInt(counter.textContent) - 1;
 }
 
-// 1pt: Simple For Loop
+// Simple For Loop
 function runForLoop() {
     let counter = parseInt(document.getElementById("counter").textContent);
     let result = "";
@@ -20,7 +20,7 @@ function runForLoop() {
     document.getElementById("forLoopResult").textContent = result;
 }
 
-// 1pt: Repetition with Condition
+// Repetition with Condition
 function showOddNumbers() {
     let counter = parseInt(document.getElementById("counter").textContent);
     let result = "";
@@ -32,7 +32,7 @@ function showOddNumbers() {
     document.getElementById("oddNumberResult").textContent = result.trim();
 }
 
-// 1pt: Arrays
+// Arrays
 function addMultiplesToArray() {
     let counter = parseInt(document.getElementById("counter").textContent);
     let multiplesArray = [];
@@ -42,7 +42,7 @@ function addMultiplesToArray() {
     console.log(multiplesArray);
 }
 
-// 2pts: Objects and Form Fields
+// Objects and Form Fields
 function printCarObject() {
     let carObj = {
         cType: document.getElementById("carType").value,
@@ -52,7 +52,7 @@ function printCarObject() {
     console.log(carObj);
 }
 
-// 2pts: Objects and Form Fields pt. 2
+// Objects and Form Fields pt. 2
 function loadCar(carNum) {
     let car;
     if (carNum === 1) car = carObject1;
@@ -64,7 +64,7 @@ function loadCar(carNum) {
     document.getElementById("carColor").value = car.cColor;
 }
 
-// 2pt: Changing Styles
+// Changing Styles
 function changeColor(colorNum) {
     let p = document.getElementById("styleParagraph");
     if (colorNum === 1) p.style.color = "red";
