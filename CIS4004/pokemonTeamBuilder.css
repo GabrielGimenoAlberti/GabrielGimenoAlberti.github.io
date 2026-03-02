@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 0 1rem;
+  text-align: center;
+  background-color: rgb(127, 141, 147);
+}
+
+h1, h2 {
+  margin-bottom: 1rem;
+}
+
+input, select, button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin: 0.25rem;
+}
+
+.moves-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.move-slot label {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.move-select {
+  width: 100%;
+}
+
+#add-btn {
+  margin-top: 0.5rem;
+}
+
+#add-message {
+  margin-top: 0.5rem;
+  min-height: 1.2rem;
+}
+
+audio {
+  display: block;
+  margin: 0.75rem auto;
+  width: 100%;
+}
+
+#pokemon-image {
+  display: block;
+  margin: 0.5rem auto;
+  width: 150px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 0.6rem;
+  vertical-align: middle;
+}
+
+th {
+  background: #f0f0f0;
+}
+
+.team-sprite {
+  width: 50px;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+.team-pokemon-name {
+  text-transform: capitalize;
+}
+
+.team-move {
+  display: inline-block;
+  margin: 0.1rem;
+  padding: 0.1rem 0.4rem;
+  background: #eee;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  text-transform: capitalize;
+}

@@ -3,7 +3,6 @@ function showFilter() {
     const filterForm = document.getElementById('filterContent');
     const newForm = document.getElementById('newContent');
 
-    // Use getComputedStyle to correctly detect CSS-default display:block on first click
     const currentDisplay = window.getComputedStyle(filterForm).display;
 
     if (currentDisplay === 'none') {
