@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokemon Team Builder</title>
+  <link rel="stylesheet" href="pokemonTeamBuilder.css" />
+</head>
+<body>
+
+  <h1>Pokemon Team Builder</h1>
+
+  <label for="pokemon-input">Name or ID</label><br />
+  <input type="text" id="pokemon-input" placeholder="e.g. pikachu or 25" />
+  <button id="find-btn">Find</button>
+
+  <div id="pokemon-section" style="display:none;">
+    <img id="pokemon-image" src="" alt="Pokemon sprite" />
+    <h2 id="pokemon-name"></h2>
+    <p id="pokemon-id"></p>
+
+    <audio id="pokemon-audio" controls></audio>
+
+    <div class="moves-grid">
+      <div class="move-slot">
+        <label>Move 1</label>
+        <select id="move-1" class="move-select"><option value="">-- Select Move --</option></select>
+      </div>
+      <div class="move-slot">
+        <label>Move 2</label>
+        <select id="move-2" class="move-select"><option value="">-- Select Move --</option></select>
+      </div>
+      <div class="move-slot">
+        <label>Move 3</label>
+        <select id="move-3" class="move-select"><option value="">-- Select Move --</option></select>
+      </div>
+      <div class="move-slot">
+        <label>Move 4</label>
+        <select id="move-4" class="move-select"><option value="">-- Select Move --</option></select>
+      </div>
+    </div>
+
+    <button id="add-btn">Add to Team</button>
+    <p id="add-message"></p>
+  </div>
+
+  <div id="team-section" style="display:none;">
+    <h2>Team</h2>
+    <table id="team-table">
+      <thead>
+        <tr>
+          <th>Pokemon</th>
+          <th>Moves</th>
+        </tr>
+      </thead>
+      <tbody id="team-body"></tbody>
+    </table>
+  </div>
+
+  <script src="pokemonTeamBuilder.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+#jumpMenu {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: pink;
+    
+}
+
+#jumpMenu a {
+    display: block;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 15%; 
+    right: 0; 
+    height: 125px;
+    text-align: center;
+    background-color: rgb(213, 161, 170);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    font-size: 25px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(74, 55, 58);
+    justify-content: space-evenly; 
+    gap: 10px; 
+    height: 50px;
+    
+}
+
+header nav button {
+    color: rgb(162, 0, 0);
+    background-color: rgb(255, 228, 233);
+    border: none;
+    width: 175px;
+    font-size: 20px;
+}
+
+main {
+    margin-left: 15%;
+    margin-top: 125px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#thanks {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    height: 50px;
+    background-color: rgb(213, 161, 170);
+    z-index: 100;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; /* Space between articles */
+    
+}
+
+article {
+    width: 300px; 
+    
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+html {
+    scroll-padding-top: 125px; /* Match your header height */
+}
